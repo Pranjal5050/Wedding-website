@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding - Application</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="w-full">
+    <!-- Navbar -->
+
+    <nav class="w-full p-5 flex item-center justify-between">
+      <h1 class="text-2xl font-serif">
+        A<i class="ri-heart-line text-[25px] text-pink-200"></i>R
+      </h1>
+
+      <div class="md:flex flex-wrap gap-8 hidden">
+        <a class="text-gray-700 hover:text-red-300 duration-300" href="#home"
+          >Home</a
+        >
+        <a
+          class="text-gray-700 hover:text-red-300 duration-300"
+          href="#our-story"
+          >Our Story</a
+        >
+        <a class="text-gray-700 hover:text-red-300 duration-300" href="#Events"
+          >Events</a
+        >
+        <a class="text-gray-700 hover:text-red-300 duration-300" href="#gallery"
+          >Gallery</a
+        >
+        <a class="text-gray-700 hover:text-red-300 duration-300" href="#rsvp"
+          >RSVP</a
+        >
+        <a class="text-gray-700 hover:text-red-300 duration-300" href="#contact"
+          >Contact</a
+        >
+      </div>
+
+      <div class="gap-3 flex flex-wrap">
+        <i class="ri-music-2-fill text-[25px] text-pink-400"></i>
+        <button
+          class="px-7 py-2 bg-red-600 text-white rounded-full cursor-pointer hover:bg-red-700"
+        >
+          Save the Date
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="w-full h-[90vh] relative">
+      <img
+        src="images/hero.png"
+        class="w-full h-full object-cover object-right"
+        alt=""
+      />
+
+      <div class="absolute top-[20%] left-[30%]">
+        <h3 class="text-sm md:text-lg text-[#6B4726] font-mono">
+          TOHETHER FOREVER
+        </h3>
+
+        <h1 class="text-7xl text-[#6B4726] font-[cursive]">Anshul</h1>
+
+        <h2 class="text-red-300 text-3xl text-center">&</h2>
+
+        <h1 class="text-7xl text-[#6B4726] font-[cursive]">Riya</h1>
+
+        <p class="text-md md:text-gray-600 text-white mt-5 font-[cursive]">
+          ARE GETTING MARRIED
+        </p>
+
+        <p class="text-xl font-[cursive] md:text-gray-800 text-white mt-3">
+          25th DEC 2026
+        </p>
+
+        <button
+          class="px-10 cursor-pointer hover:bg-red-700 py-2 bg-red-500 text-white rounded-full mt-5"
+        >
+          You're Invited <i class="ri-arrow-right-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Clock -->
+
+    <section class="bg-[#fdfaf5] py-12 px-5 text-center">
+      <p class="mb-7 text-sm tracking-[4px] text-[#6b4726]">OUR BIG DAY IN</p>
+
+      <div class="flex justify-center gap-4">
+        <!-- Days -->
+
+        <div
+          class="flex h-24 w-24 flex-col items-center justify-center rounded-xl bg-white shadow-[0_5px_20px_rgba(80,50,20,0.08)]"
+        >
+          <span id="days" class="font-serif text-4xl text-[#6B4726]"> 00 </span>
+
+          <span class="mt-1 text-sm text-[#8B7968]"> Days </span>
+        </div>
+
+        <!-- Hours -->
+
+        <div
+          class="flex h-24 w-24 flex-col items-center justify-center rounded-xl bg-white shadow-[0_5px_20px_rgba(80,50,20,0.08)]"
+        >
+          <span id="hours" class="font-serif text-4xl text-[#6B4726]">
+            00
+          </span>
+
+          <span class="mt-1 text-sm text-[#8B7968]"> Hours </span>
+        </div>
+
+        <!-- Minutes -->
+
+        <div
+          class="flex h-24 w-24 flex-col items-center justify-center rounded-xl bg-white shadow-[0_5px_20px_rgba(80,50,20,0.08)]"
+        >
+          <span id="minutes" class="font-serif text-4xl text-[#6B4726]">
+            00
+          </span>
+
+          <span class="mt-1 text-sm text-[#8B7968]"> Minutes </span>
+        </div>
+
+        <!-- Seconds -->
+
+        <div
+          class="flex h-24 w-24 flex-col items-center justify-center rounded-xl bg-white shadow-[0_5px_20px_rgba(80,50,20,0.08)]"
+        >
+          <span id="seconds" class="font-serif text-4xl text-[#6B4726]">
+            00
+          </span>
+
+          <span class="mt-1 text-sm text-[#8B7968]"> Seconds </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+
+    <section class="w-full h-90 relative">
+      <img
+        src="images/banner.png"
+        class="w-full h-full object-cover"
+        alt="Banner"
+      />
+
+      <div
+        class="absolute top-[30%] md:left-[40%] left-[14%] text-white text-center"
+      >
+        <p class="text-sm md:text-[12px] text-gray-200">A NEW CHAPTER</p>
+        <h1 class="md:text-5xl text-3xl font-serif mt-1">Two Hearts</h1>
+        <h1 class="md:text-5xl text-3xl font-serif">One Forever</h1>
+        <hr />
+
+        <p class="text-sm md:text-[12px] text-gray-200 mt-3">
+          We're so excited to celebrate this special <br />
+          chapter of our lives with the people we love.
+        </p>
+      </div>
+    </section>
+
+    <!-- Play Song -->
+
+    <section
+      class="relative min-h-[330px] overflow-hidden bg-cover bg-center px-5 py-14"
+      style="background-image: url(&quot;./images/music-bg.png&quot;)"
+    >
+      <!-- Background overlay -->
+      <div class="absolute inset-0 bg-white/25"></div>
+
+      <div class="relative z-10 mx-auto max-w-4xl text-center">
+        <!-- Heading -->
+        <p class="mb-3 text-[12px] font-medium tracking-[4px] text-[#80654b]">
+          OUR LOVE SONG
+        </p>
+
+        <h2 class="font-serif text-4xl text-[#17120e] md:text-5xl">
+          Play a Song
+        </h2>
+
+        <p class="mt-2 text-[15px] text-[#66584d]">
+          Let the music set the mood!
+        </p>
+
+        <!-- Music Player -->
+        <div
+          class="mx-auto mt-7 flex max-w-[610px] items-center gap-3 rounded-2xl bg-white/90 px-4 py-4 shadow-[0_8px_30px_rgba(80,50,20,0.10)] backdrop-blur-sm sm:gap-4 sm:px-5"
+        >
+          <!-- Song Thumbnail -->
+          <div
+            id="songImage"
+            class="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-[#eee5dc] sm:h-14 sm:w-14"
+          >
+            <i class="ri-music-2-line text-2xl text-[#80654b]"></i>
+          </div>
+
+          <!-- Song Details -->
+          <div class="min-w-0 flex-1 text-left">
+            <p
+              id="songName"
+              class="truncate text-sm font-medium text-[#35271d]"
+            >
+              No song selected
+            </p>
+
+            <p id="songArtist" class="truncate text-xs text-[#806f61]">
+              Choose your favorite song
+            </p>
+
+            <!-- Progress Bar -->
+            <div class="mt-3 flex items-center gap-2">
+              <span
+                id="currentTime"
+                class="shrink-0 text-[10px] text-[#806f61]"
+              >
+                0:00
+              </span>
+
+              <input
+                id="progress"
+                type="range"
+                min="0"
+                max="100"
+                step="0.1"
+                value="0"
+                aria-label="Song progress"
+                class="h-1 min-w-0 flex-1 cursor-pointer accent-[#d9575f]"
+              />
+
+              <span id="duration" class="shrink-0 text-[10px] text-[#806f61]">
+                0:00
+              </span>
+            </div>
+          </div>
+
+          <!-- Play / Pause -->
+          <button
+            id="playBtn"
+            type="button"
+            aria-label="Play song"
+            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#d9575f] text-white shadow-md transition hover:scale-105 hover:bg-[#c94b53] disabled:cursor-not-allowed disabled:opacity-40 sm:h-12 sm:w-12"
+            disabled
+          >
+            <i id="playIcon" class="ri-play-fill text-2xl"></i>
+          </button>
+
+          <!-- Volume -->
+          <div class="hidden items-center gap-2 md:flex">
+            <i
+              id="volumeIcon"
+              class="ri-volume-up-line text-xl text-[#80654b]"
+            ></i>
+
+            <input
+              id="volume"
+              type="range"
+              min="0"
+              max="1"
+              step="0.01"
+              value="1"
+              aria-label="Volume"
+              class="w-16 cursor-pointer accent-[#d9575f]"
+            />
+          </div>
+        </div>
+
+        <!-- Browse Song Button -->
+        <label
+          for="songInput"
+          class="mx-auto mt-5 inline-flex cursor-pointer items-center gap-2 rounded-full border border-[#d7bfa5] bg-white/85 px-5 py-2.5 text-sm font-medium text-[#6b4726] shadow-sm transition hover:bg-white"
+        >
+          <i class="ri-upload-2-line text-lg"></i>
+          Browse Song
+        </label>
+
+        <p
+          id="uploadStatus"
+          class="mt-2 text-xs text-[#80654b]"
+          aria-live="polite"
+        ></p>
+
+        <input id="songInput" type="file" accept="audio/*" class="hidden" />
+      </div>
+
+      <!-- Audio Element -->
+      <audio id="audio" preload="metadata"></audio>
+    </section>
+
+    <!-- RSVP -->
+
+    <div class="w-full relative">
+        <img src="images/rsvp.png" class="w-full h-120 object-cover" alt="">
+        <div class="absolute top-5 md:left-[20%] left-[4%] text-white text-center">
+
+            <h3 class="font-[cursive] text-gray-200 text-[10px] md:text-md">BE A PART OF OUR DAY</h3>
+
+            <h1 class="text-4xl font-[cursive] text-gray-300 mt-2">RSVP</h1>
+
+            <p class="text-sm text-gray-300 mt-3 font-[cursive] font-[light]">kindly confirm your presence and make our day even more special.</p>
+
+            <div class="md:w-[50vw] w-full py-2 p-2">
+                <input type="text" class="w-full p-2 rounded-md mt-2 border-1 border-gray-200 outline-none" placeholder="Your Name">
+                <input type="text" class="w-full p-2 rounded-md mt-2 border-1 border-gray-200 outline-none" placeholder="Number of guests">
+                <input type="text" class="w-full p-2 rounded-md mt-2 border-1 border-gray-200 outline-none" placeholder="Will you attend?">
+                <input type="text" class="w-full p-2 rounded-md mt-2 border-1 border-gray-200 outline-none" placeholder="Message(Optional)">
+                <button class="w-full py-2 rounded-full mt-3 bg-red-600 cursor-pointer hover:bg-red-700 duration-300">Submit RSVP <i class="ri-arrow-right-fill"></i></button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
